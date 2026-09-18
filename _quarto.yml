@@ -73,7 +73,7 @@ book:
       chapters:
       - pcl/pcl.qmd
 
-    - part: "In-Class Activities"
+    - part: "In-Class Activities!"
       chapters:
       - ica/ica-sample1.qmd
       - ica/ica-sample2.qmd
