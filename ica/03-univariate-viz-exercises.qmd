@@ -387,6 +387,8 @@ Practice your viz skills to learn about some of the variables in one of the foll
 
 # World Cup data
 #world_cup <- read.csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-29/worldcups.csv")
+
+
 ```
 
 #### Part b
