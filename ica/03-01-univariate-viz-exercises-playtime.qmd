@@ -1,0 +1,29 @@
+---
+title: "PLAYING WITH DATA!LOOK AT THIS GRAPH!"
+format: html
+---
+
+```{r}
+world_cup_data <- read.csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-29/worldcups.csv")
+
+
+library(tidyverse)
+```
+
+```{r}
+ggplot(world_cup_data, aes(x = year, y = goals_scored)) +
+  geom_line(color = "blue") +
+  theme_minimal()
+```
+```{r}
+ggplot(world_cup_data, aes(x = year, y = teams)) + 
+  geom_line(color = "orange") +
+  theme_minimal()
+```
+```{r}
+ggplot(world_cup_data, aes(x = year)) +
+  geom_line(aes(y = goals_scored), color = "orange") +
+  geom_line(aes(y = teams, color = "red")) +
+  labs(title = "I PUT THE GRAPHS TOGETHER", x = "YEAR", y = "") 
+```
+
