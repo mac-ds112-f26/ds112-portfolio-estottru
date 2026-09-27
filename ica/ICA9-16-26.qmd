@@ -1,0 +1,11 @@
+---
+title: "ICA9-16-26"
+format: html
+---
+```{r}
+hikes <- read.csv("https://mac-stat.github.io/data/high_peaks.csv")
+library(tidyverse)
+
+head(hikes)
+ggplot(hikes, aes(x = rating))
+```
